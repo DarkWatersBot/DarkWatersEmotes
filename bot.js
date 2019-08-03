@@ -6,7 +6,7 @@ client.on('ready', () => {
  });
 
 client.on('message', message => {
-	if (message.member.roles.find(r => r.name === "Owner") || message.member.roles.find(r => r.name === "Admin") || message.member.roles.find(r => r.name === "VIP") || message.member.roles.find(r => r.name === "Supporter")) {
+	if (message.member.roles.find(role => role.name === "Owner") || message.member.roles.find(role => role.name === "Admin") || message.member.roles.find(role => role.name === "VIP") || message.member.roles.find(role => role.name === "Supporter")) {
 		if (message.content.includes('//sweat')){
 			const attachment = new MessageAttachment('https://1.bp.blogspot.com/-LlVP0MWQ1o0/XS1kA72glxI/AAAAAAAAASc/q3P-jTyjVYkvAn-IWPRyHZ3Ce9srTyAlgCLcBGAs/s1600/ColdSweatVesta-Small.png');
 			message.channel.send(attachment);
