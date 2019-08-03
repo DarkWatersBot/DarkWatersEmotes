@@ -1,1 +1,1 @@
-worker: note bot.js
+worker note bot.js
