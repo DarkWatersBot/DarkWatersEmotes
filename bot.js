@@ -76,7 +76,7 @@ client.on('message', message => {
 		}else if (message.content.includes('//whatislove')){
 			const attachment = new Attachment('https://1.bp.blogspot.com/-Zhp6UJ1GU8o/XUzRzNVQt0I/AAAAAAAAAUc/2tcoUY-1Ze038uqWOXO8i3y2VVN0ldP2gCLcBGAs/s1600/whatislove.gif');
 			message.channel.send(attachment);
-		}else if (message.content.includes('//progress') && msg.channel.id === '595828458135879680'){
+		}else if (message.content.includes('//progress') && message.channel.id === '595828458135879680'){
 			const attachment = new Attachment('https://indarkwaters.lima-city.de/progress/progress.png');
 			message.channel.send(attachment);
 		}}
